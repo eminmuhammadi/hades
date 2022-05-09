@@ -10,22 +10,14 @@ bash run.sh
 ```
 
 ## Production
+```bash
 docker-compose up --build -d
 ```
 
 ## Controllers
-```
+```bash
 method  | path      | name | handlers
 ------  | ----      | ---- | --------
-POST    | /         |      | github.com/ansrivas/fiberprometheus/v2.(*FiberPrometheus).Middleware-fm
-GET     | /         |      | github.com/ansrivas/fiberprometheus/v2.(*FiberPrometheus).Middleware-fm
-TRACE   | /         |      | github.com/ansrivas/fiberprometheus/v2.(*FiberPrometheus).Middleware-fm
-OPTIONS | /         |      | github.com/ansrivas/fiberprometheus/v2.(*FiberPrometheus).Middleware-fm
-CONNECT | /         |      | github.com/ansrivas/fiberprometheus/v2.(*FiberPrometheus).Middleware-fm
-HEAD    | /         |      | github.com/ansrivas/fiberprometheus/v2.(*FiberPrometheus).Middleware-fm
-DELETE  | /         |      | github.com/ansrivas/fiberprometheus/v2.(*FiberPrometheus).Middleware-fm
-PUT     | /         |      | github.com/ansrivas/fiberprometheus/v2.(*FiberPrometheus).Middleware-fm
-PATCH   | /         |      | github.com/ansrivas/fiberprometheus/v2.(*FiberPrometheus).Middleware-fm
 HEAD    | /logs     |      | github.com/eminmuhammadi/hades/api.Index
 GET     | /logs     |      | github.com/eminmuhammadi/hades/api.Index
 HEAD    | /logs/:id |      | github.com/eminmuhammadi/hades/api.ByID
